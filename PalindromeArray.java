@@ -1,13 +1,21 @@
 public class PalindromeArray {
+    
     public static boolean isPalindrome(int[] array) {
-        int start = 0;                
+        
+        int start = 0;     
+        
         int end = array.length - 1;  
+        
 
         while (start < end) {
+            
             if (array[start] != array[end]) {
+                
                 return false;
             }
+            
             start++;
+            
             end--;
         }
         return true;
